@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello, World!</title>
+    <link rel="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="#">Logo</a>
+            </div>
+            <div class="nav-menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <br>
+    <h1 class="title"><span style="color:blue;">Jadwal </span>Pelajaran!</h1>    
+    <p id="currentTime"></p>
+    <div id="div" class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Time</th>
+                    <th>Senin</th>
+                    <th>Selasa</th>
+                    <th>Rabu</th>
+                    <th>Kamis</th>
+                    <th>Jumat</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>07:30 - 09:10</td>
+                    <td>MAPEN_G2</td>
+                    <td>TI_G2</td>
+                    <td></td>
+                    <td></td>
+                    <td>PDT_G2</td>
+                </tr>
+                <tr>
+                    <td>09:15 - 10:55</td>
+                    <td>TAM_G2</td>
+                    <td>ADSI_G2</td>
+                    <td></td>
+                    <td>ML_GC</td>
+                    <td>ML(R)_MB</td>
+                </tr>
+                <tr>
+                    <td>11:00 - 12:40</td>
+                    <td></td>
+                    <td>AI_G2</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>13:50 - 15:35</td>
+                    <td></td>
+                    <td>AI_MA</td>
+                    <td></td>
+                    <td>ADSI(R)_MB</td>
+                    <td>TAM(R)_L1</td>
+                </tr>
+                <tr>
+                    <td>15:50 - 17:30</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>WEB(R)_L1</td>
+                    <td>WEB_GC</td>                   
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <script scr="script.js">
+        const currentTime = document.getElementById('currentTime');
+        currentTime.innerHTML = new Date();
+    </script>
+</body>
+</html>

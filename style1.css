@@ -1,0 +1,151 @@
+body {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: whitesmoke;
+    font: poppins;
+    margin: 1rem;
+    display: auto;
+}
+h1{
+    text-align: center;
+    align-items: center;
+    display: inline-block;
+    margin-top: 5rem;
+    background-color: lightcyan; 
+    box-shadow: 1px 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 0.2em 0.5em; 
+    border-radius: 5px; 
+    transition: background-color 0.3s ease; 
+}
+.table-container{
+    margin: 1em auto;
+    width: 50%;
+    background-color: white;
+    padding: 1em;
+    overflow-x: auto;
+    box-shadow: 1px 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+
+}
+.navbar{
+    width: 100%;
+    background-color: white;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+    padding: 1em 2em;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+.nav-container{
+    display: flex;
+    width: 90%;
+    align-items: center;
+}
+.nav-logo{
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px 15px;
+}
+.nav-menu{
+    margin-left: auto;
+    display: flex;
+}
+.nav-menu ul{
+    display: flex;
+    list-style: none;
+    padding: 0;
+    gap : 20px;
+}
+.nav-menu ul li{
+    display: inline-block;;
+}
+.nav-menu ul li a{
+    text-decoration: none;
+    color: black;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: auto;
+}
+th{
+    background-color: white;
+    padding: 0.5em;
+    border: 1px solid black;
+}
+
+tr{
+    background-color: white;
+}
+td{
+    border: 1px solid black;
+    padding: 0.5em;
+}
+
+@media screen and (max-width: 600px){
+    h1{
+        font-size: 1.5em;
+    }
+    .table-container{
+        margin: 0;
+        padding: 0;
+    }
+    table{
+        width: 100%;
+    }   
+}
+
+h1:hover{
+    background-color: gray;
+    display: inline-block;
+}
+
+tr:hover{
+    background-color: lightblue;
+
+}
+.nav-logo:hover{
+    background-color: lightblue;
+}
+.nav-menu ul li a:hover{
+    background-color: lightblue;
+}
+
+.login-form{
+    margin: 1em auto;
+    width: 50%;
+    background-color: white;
+    padding: 1em;
+    overflow-x: auto;
+    margin-top: 10rem;
+    box-shadow: 1px 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+input{
+    padding: 0.5em;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+button{
+    padding: 0.5em;
+    border-radius: 5px;
+    border: 1px solid black;
+    background-color: lightblue;
+    cursor: pointer;
+}
